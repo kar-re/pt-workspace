@@ -26,7 +26,7 @@ public class DrawSquareLine {
 					System.out.println("DeltaX: " + deltaX  + " DeltaY: " + deltaY + " x: " + x + " y: " + y );
 					sq.move(deltaX, deltaY);
 					sq.draw(w);
-					w.delay(500);
+					w.delay(5);
 				}
 				oldX = x;
 				oldY = y;
