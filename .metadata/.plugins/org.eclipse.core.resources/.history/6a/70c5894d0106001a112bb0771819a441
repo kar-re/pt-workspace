@@ -1,0 +1,10 @@
+import se.lth.cs.pt.square.Square;
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class MoveSquare {
+	public static void main(String[] args) {
+		SimpleWindow w = new SimpleWindow(500, 500, "Move Square");
+		Square sq = new Square(250, 250, 100);
+		
+	}
+}
