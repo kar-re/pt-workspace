@@ -1,0 +1,10 @@
+public class Mathss {
+    public static void main(String[] args) {
+    	int a = 15;
+    	int b = 12;
+    	int c = 5;
+    	double d = 1.2;
+    	double result = a / c + b / c + d;
+    	System.out.println(result);
+    	}
+}

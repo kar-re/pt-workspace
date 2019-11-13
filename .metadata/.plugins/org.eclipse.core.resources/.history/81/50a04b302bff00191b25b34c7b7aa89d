@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Mathss {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); 
+		System.out.println("Skriv in två tal.");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int max;
+		if (a > b) {
+			max = a;
+		    System.out.println("A > B, och är " + max);
+		}
+		if (b > a) {
+			max = b;
+			System.out.println("B > A, och är " + max);
+		}
+	}
+}

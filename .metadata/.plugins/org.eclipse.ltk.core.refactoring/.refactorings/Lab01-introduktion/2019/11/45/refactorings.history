@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;f&apos; in &apos;LineDrawing.main(...)&apos; to &apos;firstTime&apos;&#x0A;- Original project: &apos;Lab01-introduktion&apos;&#x0A;- Original element: &apos;LineDrawing.main(String[]).f&apos;&#x0A;- Renamed element: &apos;f&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;f&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{LineDrawing.java[LineDrawing~main~\[QString;@f!199!215!207!207!Z!0!false" name="firstTime" references="true" stamp="1572956708956" version="1.0"/>
+</session>

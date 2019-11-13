@@ -1,0 +1,40 @@
+import java.awt.Color;
+
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class LineDrawing {
+	public static void main(String[] args) {
+		int steps = 12;
+		SimpleWindow w = new SimpleWindow(500, 500, "LineDrawing");
+		w.moveTo(0, 0);
+		boolean firstTime = true;
+		while (true) {
+			w.waitForMouseClick();
+			
+			int x = w.getMouseX();
+			int y = w.getMouseY();
+			
+//			if (firstTime) {
+//				w.moveTo(x, y);
+//				firstTime = false;
+//			}
+			Color RGB = new Color(255,0,0);
+			//w.setLineWidth(15);
+			double prectestX, prectestY;
+			for (int i=1; i<=steps; i++) {
+				RGB = Color.getHSBColor((1.0f*(i/steps)), 1.0f, 0.5f);
+				w.setLineColor(RGB);
+				prectestX = (x/steps)*i;
+				prectestY = (y/steps)*i;
+//				System.out.println("X: " + prectestX + " Y :" + prectestY);
+				System.out.println("Color: " + RGB);
+				w.lineTo((int) prectestX, (int) prectestY);
+				
+			}
+			
+			//w.lineTo(x, y);
+		}
+	}
+
+}
+
