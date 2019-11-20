@@ -1,8 +1,0 @@
-import se.lth.cs.pt.window.SimpleWindow;
-
-public class Mole {
-	public static void main(String[] args) {
-		SimpleWindow w = new SimpleWindow(200, 200, "Moleman");
-		System.out.println("Keep on digging!");
-	}
-}
