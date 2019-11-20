@@ -1,0 +1,10 @@
+
+
+public class Mole {
+	public static void main(String[] args) {
+		Graphics g = new Graphics(30, 30, 20);
+
+		g.block(50, 50, Colors.MOLE);
+		System.out.println("Keep on digging!");
+	}
+}

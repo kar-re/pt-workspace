@@ -7,18 +7,18 @@ public class DrawThreeSquares {
 //		Square sq = null;
 //		sq.draw(w);
 
-		Square sq = new Square(250, 250, 100);
+		Square square = new Square(250, 250, 100);
 //		sq.draw(null);
-		
-		sq.draw(w);
+
+		square.draw(w);
 		w.delay(500);
-		
-		sq.move(30, 30);
-		sq.draw(w);
+
+		square.move(30, 30);
+		square.draw(w);
 		w.delay(500);
-		
-		sq.move(20, -60);
-		sq.draw(w);
-		
+
+		square.move(20, -60);
+		square.draw(w);
+
 	}
 }

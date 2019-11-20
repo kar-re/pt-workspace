@@ -1,0 +1,14 @@
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class Graphics {
+	private int width, blockSize, height;
+	SimpleWindow w = new SimpleWindow(300, 500, "Digging");
+
+	public void square() {
+		w.moveTo(10, 10);
+		w.lineTo(10, 20);
+		w.lineTo(20, 20);
+		w.lineTo(20, 10);
+		w.lineTo(10, 10);
+	}
+}

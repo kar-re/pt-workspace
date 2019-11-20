@@ -1,0 +1,15 @@
+public class Mole {
+	private Graphics g = new Graphics(30, 50, 10);
+	
+	public static void main(String[] args) {
+		Mole m = new Mole();
+		m.drawWorld():
+//		g.block(3, 3, Colors.MOLE);
+		System.out.println("Keep on digging!");
+		
+	}
+	
+	public static void drawWorld() {
+		g.rectangle
+	}
+}
