@@ -33,6 +33,7 @@ public class Mole {
 			
 			/* Inputhantering. Bör kanske omfaktoriseras in i en egen klass? */
 			char key = g.waitForKey();
+			g.block(x, y, Colors.TUNNEL);
 			if (key == 'w') {
 				y -= 1;
 			} else if (key == 'a') {
@@ -51,7 +52,7 @@ public class Mole {
 			}
 			if (y == (g.getHeight()/3 - 1)) {
 				y = g.getHeight()/3;
-			} else if (y == g.getHeight() + 1) {
+			} else if (y == g.getHeight()) {
 				y = g.getHeight() - 1;
 			}
 			
