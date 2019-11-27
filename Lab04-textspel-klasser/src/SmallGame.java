@@ -15,6 +15,7 @@ public class SmallGame {
 	}
 	public static void main(String[] args) {
 		String str;
+		System.out.println("\uD83D\uDE00");
 		printLnDelay(terminalColors.ANSI_WHITE + "Hello world!");
 		while (true) {
 			Scanner scanner = new Scanner(System.in);
@@ -29,6 +30,13 @@ public class SmallGame {
 		}
 		
 	}
+	String parseInput(String str) {
+		str.toUpperCase();
+		return str;
+	}
+	
+	
+	
 	static void delay(int ms) {
 		try
 		{
