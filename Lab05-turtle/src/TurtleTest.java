@@ -36,7 +36,6 @@ public class TurtleTest {
 
 		t1.penDown();
 		t2.penDown();
-
 		t1.left(-90);
 		t2.left(90);
 		t1.forward(50);

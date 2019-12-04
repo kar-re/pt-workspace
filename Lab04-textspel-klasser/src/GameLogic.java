@@ -35,13 +35,12 @@ public class GameLogic {
 		renderBoi.centerTextMid(output, terminalColors.BACK_RED);
 		delay(1000);
 		
+		renderBoi.clearScreen();
 		renderBoi.centerTextMid("Hur många frågor vill ni spela?", terminalColors.BACK_BLUE);
 		nbrQuestions = scan.nextInt();
-		if (nbrQuestions > questions.size()) {
-			renderBoi.centerTextMid("Det finns inte så många frågor i databasen!, prova igen!", terminalColors.TEXT_WHITE);
-			nbrQuestions = scan.nextInt();
-		}
-		renderBoi.clearScreen();
+//		if (scan.hasNextInt()) {
+//			checkAmount();			
+//		}
 		
 		String output2 = String.format("Bra! Då börjar vi med första frågan som går till %S!", name1);
 		currPlayer = name1;
@@ -50,7 +49,14 @@ public class GameLogic {
 		Question();
 	}
 	
-	
+	void checkAmount() {
+		if (nbrQuestions > questions.size()) {
+			renderBoi.clearScreen();
+			renderBoi.centerTextMid("Det finns inte så många frågor i databasen!, prova igen!", terminalColors.TEXT_WHITE);
+			nbrQuestions = scan.nextInt();
+			checkAmount();
+		}
+	}
 	
 	void Question() {
 		currQst += 1;
