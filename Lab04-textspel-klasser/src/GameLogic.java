@@ -37,6 +37,10 @@ public class GameLogic {
 		
 		renderBoi.centerTextMid("Hur många frågor vill ni spela?", terminalColors.BACK_BLUE);
 		nbrQuestions = scan.nextInt();
+		if (nbrQuestions > questions.size()) {
+			renderBoi.centerTextMid("Det finns inte så många frågor i databasen!, prova igen!", terminalColors.TEXT_WHITE);
+			nbrQuestions = scan.nextInt();
+		}
 		renderBoi.clearScreen();
 		
 		String output2 = String.format("Bra! Då börjar vi med första frågan som går till %S!", name1);
@@ -50,7 +54,7 @@ public class GameLogic {
 	
 	void Question() {
 		currQst += 1;
-		int rndQ = (int) Math.random() * questions.size();
+		int rndQ = (int) (Math.random() * questions.size());
 		questions.get(rndQ);
 		renderBoi.presentFourQuestions(
 				questions.get(rndQ).question, 
