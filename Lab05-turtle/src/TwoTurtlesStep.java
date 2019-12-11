@@ -5,7 +5,7 @@ public class TwoTurtlesStep {
  	public static void main(String[] args) {
 		SimpleWindow w = new SimpleWindow(600, 600, "TurtleDrawSquare");
 		Turtle t1 = new Turtle(w, 150, 150);
-		Turtle t2 = new Turtle(w, 500, 500);
+		Turtle t2 = new Turtle(w, 200, 200);
 		int dist = 100;
 		while (dist >=50) {
 			dist = (int) Math.sqrt(Math.pow((t2.getY() - t1.getY()), 2) + Math.pow((t2.getX() - t1.getX()), 2));

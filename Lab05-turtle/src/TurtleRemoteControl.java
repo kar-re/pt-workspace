@@ -5,7 +5,8 @@ public class TurtleRemoteControl {
 	Turtle t;
 	TurtleRemoteControl() {
 		w = new SimpleWindow(600, 600, "TurtleDrawSquare");
-		t = new Turtle(w, 300, 300);		
+		t = new Turtle(w, 300, 300);
+		
 	}
  	public static void main(String[] args) {
  		TurtleRemoteControl t = new TurtleRemoteControl(); 

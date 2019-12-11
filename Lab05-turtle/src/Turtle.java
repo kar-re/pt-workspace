@@ -8,7 +8,7 @@ public class Turtle {
 	 * isPenDown anger om pennan är nere eller ej. SimpleWindow w;
 	 */
 	SimpleWindow w;
-	double X, Y, rot, turtleRot;
+	double X, Y, rot;
 	boolean isPenDown;
 	Sprite turtle;
 
@@ -49,9 +49,10 @@ public class Turtle {
 		if (isPenDown) {
 			
 			w.lineTo(pF(x1), pF(y1));
-		} else {
-			w.moveTo(pF(x1), pF(y1));
-		}
+		} 
+//		else {
+//			w.moveTo(pF(x1), pF(y1));
+//		}
 		turtle.moveTo(pF(x1 - turtle.getWidth()/2), pF(y1 - turtle.getHeight()/2));
 		turtle.rotate(0);
 		X = x1;
@@ -74,6 +75,11 @@ public class Turtle {
 		w.moveTo(pF(X), pF(Y));
 
 	}
+	/** Hjälpmetod för att runda av doubles till ints
+	 * 
+	 * @param n
+	 * @return
+	 */
 	int pF(double n) {
 		return (int) Math.round(n);
 	}
