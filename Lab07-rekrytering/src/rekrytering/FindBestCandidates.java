@@ -9,7 +9,7 @@ public class FindBestCandidates {
 	 * Plockar ut de bästa kandidaterna baserat på betyg. Betygsgränsen kan sättas
 	 * genom att ändra MIN_AVG_GRADE
 	 */
-	private static final double MIN_AVG_GRADE = 0.0;
+	private static final double MIN_AVG_GRADE = 5.0;
 
 	public static void main(String[] args) {
 		/*
@@ -33,7 +33,9 @@ public class FindBestCandidates {
 		}
 
 		// Printar ut felkandidaterna
-		System.out.println("The following entries had errors in their application and should be reviewed manually");
+		if(errorList.size() > 0) 
+			System.out.println("The following entries had errors in their application and should be reviewed manually");
+		
 		for (int i = 0; i < errorList.size(); i++) {
 			System.out.println(errorList.get(i).toString());
 		}
