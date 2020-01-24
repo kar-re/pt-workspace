@@ -28,6 +28,7 @@ public class MazeTest {
 		turtle.penDown();
 		maze.draw(window);
 		mw.walk(maze);
+
 		/* Loop for mazewalker */
 		while (!maze.atExit(turtle.getX(), turtle.getY())) {
 			mw.walk(maze);

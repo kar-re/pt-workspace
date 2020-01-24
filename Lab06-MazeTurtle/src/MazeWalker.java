@@ -1,10 +1,11 @@
 import se.lth.cs.pt.maze.Maze;
-/*
- * Super simple algorithm to traverse maze using the 
- * left hand method supplied according to the lab instructions
- */
+
 
 public class MazeWalker {
+	/*
+	 * Super simple algorithm to traverse maze using the 
+	 * left hand method supplied according to the lab instructions
+	 */
 	private Turtle turtle;
 	private int d, x, y;
 
