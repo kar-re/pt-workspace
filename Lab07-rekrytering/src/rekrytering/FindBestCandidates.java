@@ -9,7 +9,7 @@ public class FindBestCandidates {
 	 * Plockar ut de bästa kandidaterna baserat på betyg. Betygsgränsen kan sättas
 	 * genom att ändra MIN_AVG_GRADE
 	 */
-	private static final double MIN_AVG_GRADE = 5.0;
+	private static final double MIN_AVG_GRADE = 0.0;
 
 	public static void main(String[] args) {
 		/*
@@ -18,7 +18,7 @@ public class FindBestCandidates {
 		 * är lat och vill inte behöva skriva flera forloopar och vektorer
 		 */
 
-		Applicant[] app = FileReader.readFromFile("applications_all.txt", 700);
+		Applicant[] app = FileReader.readFromFile("applications_x.txt", 700);
 		Applicant[] bestCand = findBestCandidates(app);
 		Arrays.sort(bestCand, Collections.reverseOrder());
 		ArrayList<Applicant> errorList = new ArrayList<Applicant>();

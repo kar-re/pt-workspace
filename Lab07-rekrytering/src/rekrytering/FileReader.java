@@ -22,7 +22,9 @@ public class FileReader {
 			return null;
 		}
 
-		// Tempvektor för att få 'rätt' vektor efter
+		// Tempvektor för att få 'rätt' vektor efter i avseende till nbrOfRows, annars
+		// blir vektorn för stor
+		// Finns det en avvägning mellan minnesåtgång/full med nullpointers eller instruktioner?
 		Applicant[] apcTemp = new Applicant[nbrOfRows];
 
 		int i = 0;
