@@ -32,7 +32,7 @@ public class MemoryGame {
 				y1 = w.getMouseCol();
 			}
 			board.turnCard(x1, y1);
-			w.drawBoard();
+			w.drawCard(x1,y1);
 
 			/*
 			 * Andra draget, while loop för att inte kunna klicka på samma kort. 
@@ -51,7 +51,7 @@ public class MemoryGame {
 			
 			
 			board.turnCard(x2, y2);
-			w.drawBoard();
+			w.drawCard(x2,y2);
 			w.delay(800);
 
 			/*
@@ -81,4 +81,5 @@ public class MemoryGame {
 
 		
 	}
+
 }

@@ -32,7 +32,7 @@ public class MazeTest {
 		/* Loop for mazewalker */
 		while (!maze.atExit(turtle.getX(), turtle.getY())) {
 			mw.walk(maze);
-			window.delay(10);
+			window.delay(1);
 		}
 
 	}
