@@ -16,14 +16,20 @@ public class TurtleRace {
 		 */
 		for (int i = 0; i < TURTLE_AMOUNT; i++) {
 			RaceTurtle turtle;
-			if (rand.nextDouble() < 0.33) {
-				turtle = new AbsentMindedTurtle(w, i);				
-			} else if (rand.nextDouble() < 0.66) {
+			switch(rand.nextInt(3)) {
+			case 0:
+				turtle = new AbsentMindedTurtle(w, i);
+				rlist.add(turtle);
+				break;
+			case 1:
 				turtle = new MoleTurtle(w, i);
-			} else {
+				rlist.add(turtle);
+				break;
+			case 2:
 				turtle = new DizzyTurtle(w, i);
+				rlist.add(turtle);
+				break;
 			}
-			rlist.add(turtle);
 		}
 		for (RaceTurtle t : rlist) {
 			System.out.println(t.toString());
@@ -63,11 +69,11 @@ public class TurtleRace {
 		System.out.println(second);
 		System.out.println(third);
 		
-		w.moveTo(w.getWidth()/2, w.getHeight()/2);
+		w.moveTo(w.getWidth()/2, (w.getHeight()/2) - 160);
 		w.writeText(first);
-		w.moveTo(w.getWidth()/2, ((w.getHeight()/2)+20));
+		w.moveTo(w.getWidth()/2, ((w.getHeight()/2) - 140));
 		w.writeText(second);
-		w.moveTo(w.getWidth()/2, ((w.getHeight()/2)+40));
+		w.moveTo(w.getWidth()/2, ((w.getHeight()/2)- 120));
 		w.writeText(third);
 
 	}
